@@ -1,0 +1,107 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <style>
+            .box{
+                width: 100px;
+                height: 100px;
+                background-color: black;
+            }
+            #b1{
+                background-color: blue;
+            }
+            #b2{
+                background-color: red;
+            }
+            #b3{
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <!--<button id="b1">NO</button>
+        <button id="b2">NO</button>
+        <button id="b3">NO</button>
+        <div class = "box">
+            Hello, 
+        </div>-->
+        
+        <!--ACTIVITY 1
+        <div class="box" id="b1" alt="GOOD"></div>
+        <div class="box" id="b2" alt="BAD"></div>
+        <div class="box" id="b3" alt="UGLY"></div>
+        <p class="output"></p>-->
+        
+        <!--.val and ANIMATE
+        <div class="box"></div>
+        <input type="text" id="input">
+        <button id ="button">Resize</button>
+        -->
+        
+        <button id="button">NO</button>
+        <div class="box" id='b1'></div>
+    </body>
+</html>
+
+<script src = "jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#button").on("click", function(){
+            //.css : 1 parameter (getter) ; 2 parameters (setter)
+            //var a = $(".box").css("margin-left", "+=100");
+            //console.log(a);
+            
+            //this specifies to the object that was triggered
+            //$(this).css("height", "50px");
+            
+            //.attr
+            //var x = $(this).attr("id");
+            //console.log(x);
+            
+            //.text : placing text content in class with .box
+            //if you pass a string it becomes a setter
+            //if you pass none it becomes a getter
+            //var x = $(".box").text();
+            //console.log(x);
+            
+            //.html : placing stuff inside other stuff
+            //$(".box").html("<button>'Tis I!</button>");
+            
+            //.val and ANIMATE
+            //var x = $("#input").val();
+            //if(!isNaN(x)){
+                //$(".box").css({"height" : x, "width" : x});
+                
+                //function ANIMATE woot! woot! THIS IS SO COOL OHMYGHAD, THIS IS IT GUYS, I'VE FOUND MY CALLING!
+                //$(".box").animate({
+                //    'width' : x,
+                //    'height' : x
+                //});
+                
+                //different time ang animation sa height og width
+                /*
+                    $(".box").animate({
+                        'width' : x,
+                    });
+                    
+                    $(".box").animate({
+                        'height' : x,
+                    });
+                */
+            //}
+        
+            //ACTIVITY 1
+            //$(".box").on("click", function(){
+            //    $(".output").text("This element is "+$(this).attr("alt")+" with the color "+$(this).css("background-color"));
+                //$(".output").css("background-color", $(this).css("background-color"));
+            //});
+        
+            //SLIDE UP AND OTHER COOL STUFF
+            $("#b1").slideToggle();
+        });
+    });
+</script>
+
+<!-- MAKE AN APP THAT WILL ACCEPT AN IMAGE AND RECREATE USING SMALL BOXES(DIVS?) WITH FANCY ANIMATION, LIKE
+     IMAGINE BOXES FLYING ALL AROUND AND MAKING AN IMAGE IN THE PROCESS-->

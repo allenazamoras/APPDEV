@@ -1,0 +1,21 @@
+.text() == textContent
+.html() == innerHTML
+.val()  == value
+.animate() == animate stuff
+
+.hide(); == hides object attached to it
+.show(); == shows object attached to it
+.toogle(); == toggles object attached to it
+
+.fadeIn()
+.fadeOut()
+.fadeToggle()
+
+.slideUp()
+.slideDown()
+.slideToggle()
+
+.parent()
+.sibling()
+.next()
+.childre() == can specify which child therefore, there can be a parameter

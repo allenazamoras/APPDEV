@@ -1,0 +1,118 @@
+<!DOCTYPE>
+<html>
+    <head>
+    </head>
+    
+    <body>
+            <!--<button onClick = "myEvent()">Do it Boi!</button>-->
+            <input type= "text" id = "num1">
+            <!--<div id = "target">'Tis but a scratch!</div>-->
+            <input type = "text" id = "num2"> = 
+            <input type = "text" id = "ans" readonly>
+            <button onClick = "Addition();">Addition</button>
+            <button onClick = "Subtraction();">Subtraction</button>
+            <button onClick = "Multiplication();">Multiplication</button>
+            <button onClick = "Division();">Division</button>
+            
+            
+    </body>
+</html>
+<script>
+//    console.log("Hello World!");
+//    document.write("Hello World!");
+//    alert("Hello World!");
+    //var x = -1;
+    function myEvent(){
+        //var a = "Hello "+document.getElementById("userInput").value+"! Nice to meet you!";
+        //document.getElementById("target").innerHTML += "<button>'Tis I!</button>";
+        //or
+        //var thisDiv = document.getElementById("target");
+        //thisDiv.innerHTML += "'Tis but a scratch!";
+        //document.getElementById("target").textContent = a;
+        //var a = document.getElementById("userInput").value;
+        //document.getElementById("target").style.color = a;
+        
+        //ARRAYS *makes the sign of the cross*
+        //var x = [2,4,5,6,7,8];
+        //var y = ["'Tis I", "'Tis but a scratch!"]
+        //console.log(x);
+        //console.log(y);
+        
+        //CHANGE COLORS
+        //x += 1;
+        //var colors = ["blue", "red", "yellow", "green", "violet", "orange"];
+        //document.getElementById("target").style.color = colors[x];
+        //x = (x == 5)?-1:x;
+        
+        //var num1 = parseInt(document.getElementById("num1").value);
+        //var num2 = parseInt(document.getElementById("num2").value);
+        //var answer = num1 + num2;
+        console.log(answer);
+    }
+    
+    //CALCULATOR!
+   
+    function Addition(){
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        
+        if(isNaN(num1) || isNaN(num2)){
+             alert("Check Input!");
+        }else{
+           document.getElementById("ans").value = num1+num2;
+        }
+    } 
+    
+    function Subtraction(){
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        
+        if(isNaN(num1) || isNaN(num2)){
+             alert("Check Input!");
+        }else{
+           document.getElementById("ans").value = num1-num2;
+        }
+    } 
+   
+    function Multiplication(){
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        
+        if(isNaN(num1) || isNaN(num2)){
+             alert("Check Input!");
+        }else{
+           document.getElementById("ans").value = num1*num2;
+        }
+    } 
+    
+    function Division(){
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        
+        if(isNaN(num1) || isNaN(num2) || num2 == 0){
+            alert("Check Input!");
+        }else{
+            document.getElementById("ans").value = num1/num2;
+        }
+    } 
+    //ORRRRR YOU CAN JUST TO THIS!!! SDFSGVSAECRGVFGC
+    //document.getElementById("ans").value = eval(num1+op+num2);
+    //ONE FREAKING LINE!!! WTH!
+    
+    //function Event(){
+        //    alert("No.");
+        //var a = 5;
+        //var b = "'Tis I!";
+        //console.log(a+b);
+        
+        //if condition
+        //if(){
+        //}else{}
+        
+        //for condition
+        //for(){}
+        
+    //}
+   
+   //SEARCH : document.getElementByClass(); && document.getElementByTagName();
+</script>

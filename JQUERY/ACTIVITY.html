@@ -1,0 +1,60 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <style>
+            .box{
+                width: 100px;
+                height: 100px;
+                border: 5px solid black;
+                margin: 5px;
+                display: inline-block;
+            }
+            .koala{
+                background-image: url("obama.jpg");
+                background-size: 100%;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="box" id = "1"></div>
+        <div class="box" id = "2"></div>
+        <div class="box" id = "3"></div>
+        <div class="box" id = "4"></div>
+        <div class="box" id = "5"></div>
+        <br>
+        <div class="box" id = "6"></div>
+        <div class="box" id = "7"></div>
+        <div class="box" id = "8"></div>
+        <div class="box" id = "9"></div>
+        <div class="box" id = "10"></div>
+        <br>
+        <div class="box koala" id = "11"></div>
+        <div class="box koala" id = "12"></div>
+        <div class="box koala" id = "13"></div>
+        <div class="box koala" id = "14"></div>
+        <div class="box koala" id = "15"></div>
+    </body>
+</html>
+
+<script src = "jquery.min.js"></script>
+
+<script>
+    var x = 0;
+    var c;
+    $(document).ready(function(){
+        $(".box").on("click", function(){
+            c = $(this).attr("class");
+            if(x == 0 && c == "box koala"){
+                c = $(this).attr("id");
+                $(c).css("border-color", "yellow");
+                x = 1;
+            }else if($(this).attr("class") == "box"){
+                $(c).css("border-color", "black");
+                $(c).removeclass("koala");
+                $(this).addclass("koala");
+                x = 0;
+            }
+        });
+    });
+</script>

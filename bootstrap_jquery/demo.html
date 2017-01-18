@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Bootstrap 101 Template</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<style>
+        .wrapper{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .panel, .panel-heading{
+            border-radius: 0px;
+            margin: 0px;
+        }
+        .panel-body{
+            display: none;
+        }
+	</style>
+  </head>
+  <body>
+    <!--*FIRST*<h1>Hello, world!</h1>
+    <p>
+        <span>Span1</span>
+        <span>Span2</span>
+        <span>Span3</span>
+        <span>Span4</span>
+    </p>-->
+    
+    <div class="wrapper">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">'TIS I!</h3>
+            </div>
+            <div class="panel-body">
+                My mind is made up, there will be trouble.
+            </div>
+        </div>
+        
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">'TIS I!</h3>
+            </div>
+            <div class="panel-body">
+                My mind is made up, there will be trouble.
+            </div>
+        </div>
+        
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">'TIS I!</h3>
+            </div>
+            <div class="panel-body">
+                My mind is made up, there will be trouble.
+            </div>
+        </div>
+        
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">'TIS I!</h3>
+            </div>
+            <div class="panel-body">
+                My mind is made up, there will be trouble.
+            </div>
+        </div>
+        
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">'TIS I!</h3>
+            </div>
+            <div class="panel-body">
+                My mind is made up, there will be trouble.
+            </div>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("span").on("click", function(){
+        //FIRST
+            //.parent()
+            //var par = $(this).parent();
+            //$(par).css("background-color", "red");
+            //$(this).css("background-color", "green");
+     
+            //.sibling()
+            //var par = $(this).siblings();
+            //for(var x = 0; x < par.length; x++){
+                //if(x % 2 == 0){
+                    //$(par[x]).css("background-color", "red");
+                //}
+            //}
+            
+            //.next() 
+            //var par = $(this).next();
+            //$(par).css("background-color", "red");  
+        });
+        
+        $(".panel").on("click", function(){
+            var x = $(this).siblings();
+            $(this).children(".panel-body").slideToggle();
+            $(x).children(".panel-body").slideUp();
+        });
+    });
+</script>
