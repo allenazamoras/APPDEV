@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Bootstrap 101 Template</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<style>
+    
+	</style>
+  </head>
+  <body>
+        <!--COLORSSSS
+        <button class="btn btn-danger">NO!</button>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <p>Paragraph 4</p>-->
+        
+        
+  </body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script>
+    var colors = ["red", "orange", "yellow", "green"];
+    $(document).ready(function(){
+        //$(".btn").on("click", function(){
+        //    $("p").each(function(){
+        //        var msg = $(this).text();
+        //        console.log(msg);
+        //   });
+        //});
+        
+        //COLORSSSSSS
+        $(".btn").on("click", function(){
+            $("p").each(function(key, value){
+                $(value).css("background-color", colors[key]);
+            });
+        });
+    });
+</script>
+

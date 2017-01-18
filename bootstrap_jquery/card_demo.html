@@ -15,7 +15,7 @@
         text-align:center;
     }
     .img-circle{
-        width: 55%;
+        width: 60%;
     }
     .options{
         margin-top:20px;
@@ -24,7 +24,7 @@
   </head>
   <body>
   <div class='card'>
-    <h3>Card 1</h3>
+    <h3>CARD 1</h3>
     <div class='img'>
         <img src="trump.jpg" class="img-circle">
     </div>
@@ -32,7 +32,7 @@
     </div>
   </div>
   <div class='card'>
-    <h3>Card 2</h3>
+    <h3>CARD 2</h3>
     <div class='img'>
         <img src="trump.jpg" class="img-circle">
     </div>
@@ -40,7 +40,7 @@
     </div>
   </div>
   <div class='card'>
-    <h3>Card 3</h3>
+    <h3>CARD 3</h3>
     <div class='img'>
         <img src="trump.jpg" class="img-circle">
     </div>
@@ -48,7 +48,7 @@
     </div>
   </div>
   <div class='card'>
-    <h3>Card 4</h3>
+    <h3>CARD 4</h3>
     <div class='img'>
         <img src="trump.jpg" class="img-circle">
     </div>
@@ -56,7 +56,7 @@
     </div>
   </div>
   <div class='card'>
-    <h3>Card 5</h3>
+    <h3>CARD 5</h3>
     <div class='img'>
         <img src="trump.jpg" class="img-circle">
     </div>
@@ -64,7 +64,7 @@
     </div>
   </div>
   <div class='card'>
-    <h3>Card 6</h3>
+    <h3>CARD 6</h3>
     <div class='img'>
         <img src="trump.jpg" class="img-circle">
     </div>
@@ -72,7 +72,7 @@
     </div>
   </div>
   <div class='card'>
-    <h3>Card 7</h3>
+    <h3>CARD 7</h3>
     <div class='img'>
         <img src="trump.jpg" class="img-circle">
     </div>
@@ -80,7 +80,7 @@
     </div>
   </div>
   <div class='card'>
-    <h3>Card 8</h3>
+    <h3>CARD 8</h3>
     <div class='img'>
         <img src="trump.jpg" class="img-circle">
     </div>
@@ -98,7 +98,7 @@
             $(this).css("background-color", "rgba(255, 193, 7, 0.22)");
             $(this).children("h3").css("font-weight", "bold");
             $(this).children(".options").html(function(){
-                return "<button class='btn btn-success'>SELECT CARD</button>";
+                return "<button class='btn btn-success btn-xs'>SELECT CARD</button>";
             });
             
             $(x).css("background-color", "white");
@@ -106,6 +106,12 @@
             $(x).children(".options").html(function(){
                 return "";
             });
+        });
+        
+        $(".options").on("click", ".btn", function(){
+            var name = $(this).parent().siblings("h3").text();
+            alert("I AM "+name+". WHY HAVE YOU SUMMONED ME IMMIGRANT!?!");
+            
         });
     });
 

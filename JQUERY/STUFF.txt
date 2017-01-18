@@ -16,6 +16,11 @@
 .slideToggle()
 
 .parent()
-.sibling()
+.siblings()
 .next()
-.childre() == can specify which child therefore, there can be a parameter
+.children() == can specify which child therefore, there can be a parameter
+
+.each()
+.addClass()
+.removeClass()
+.hasClass()
