@@ -24,3 +24,7 @@
 .addClass()
 .removeClass()
 .hasClass()
+
+keyup
+keydown
+keypress

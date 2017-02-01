@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html>
+    <body>
+        <!--SHOW STUFF WHILE USER IS TYPING-->
+        <input type="text" class="user"></input>
+        <p></p>
+    </body>
+</html>
+
+<script src="jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        //detect a keyboard press *keydown, keyup, keypress*
+        //$(document).on("keydown", function(event){
+            //prevent the initial function of a key ex: f5 will not refresh anymore
+        //    event.preventDefault();
+        //    switch(event.keyCode){
+        //        case 37: console.log("'Tis I!"); break;
+        //        case 38: console.log("'Tis but a scratch!"); break;
+        //        case 39: console.log("You coward! Come back here and face me!"); break;
+        //        case 40: console.log("My mind is made up. There will be trouble."); break;
+        //    }
+        //});
+        
+        //SHOW STUFF WHILE USER IS TYPING
+        $('.user').on("keyup", function(event){
+            $("p").text($(".user").val());
+        });
+    });
+</script>
+
+<!--KeyCode can be used to make a sound pad, which is cool. No I am not a nerd. -->
